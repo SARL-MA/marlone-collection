@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marlone Collection — L'art de vivre d'exception. Un univers dédié au style, à l'élégance et aux expériences uniques.">
+    <meta property="og:title" content="Marlone Collection — L'art de vivre d'exception">
+    <meta property="og:description" content="Découvrez Marlone Collection, un univers dédié au style, à l'élégance et à l'art de vivre.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero/hero.jpg">
+    <meta name="author" content="Marlone Collection">
+    <meta name="robots" content="index, follow">
+    <title>Marlone Collection — L'art de vivre d'exception</title>
+    <link rel="icon" type="image/jpeg" href="images/logo/ton-logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    <nav>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <a href="#accueil" class="logo">
+    <img src="images/logo/ton-logo.jpg" alt="Marlone Collection">
+</a>
+
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="accueil">
+        <p>MARLONE COLLECTION</p>
+        <h1>L'art de vivre d'exception.</h1>
+        <p>Sur terre comme chez vous.</p>
+        <a href="#collection">Découvrir</a>
+        <span class="scroll-indicator">↓</span>
+    </section>
+
+    <section id="collection">
+
+    <p>NOTRE UNIVERS</p>
+
+    <h2>La Collection</h2>
+
+    <div class="collection-grid">
+
+        <article class="collection-card">
+            <img src="images/collection/elegance.jpg" alt="Élégance">
+            <span>01</span>
+            <h3>Élégance</h3>
+            <p>
+                Des inspirations choisies avec exigence
+                pour créer un univers unique.
+            </p>
+        </article>
+
+        <article class="collection-card">
+            <img src="images/collection/artdevivre.jpg" alt="Art de vivre">
+            <span>02</span>
+            <h3>Art de vivre</h3>
+            <p>
+                Une approche du confort, du style
+                et du raffinement au quotidien.
+            </p>
+        </article>
+
+        <article class="collection-card">
+            <img src="images/collection/exclusivite.jpg" alt="Exclusivité">
+            <span>03</span>
+            <h3>Exclusivité</h3>
+            <p>
+                Des expériences pensées pour ceux
+                qui recherchent quelque chose de différent.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+    <section id="apropos">
+
+    <div class="about-image">
+    <img src="images/about/about.jpg" alt="Marlone Collection">
+</div>
+
+        <div>
+            <p>À PROPOS</p>
+            <h2>Une vision de l'élégance.</h2>
+        </div>
+
+        <div>
+            <p>
+                Marlone Collection est un univers dédié à l'art de vivre,
+                au style et aux expériences qui donnent du caractère
+                au quotidien.
+            </p>
+
+            <p>
+                Notre vision repose sur une idée simple :
+                rechercher la qualité, privilégier l'authenticité
+                et créer une expérience qui ne ressemble à aucune autre.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+    <section id="contact">
+
+    <div class="contact-content">
+
+        <div>
+            <p>CONTACT</p>
+            <h2>Parlons-nous.</h2>
+        </div>
+
+        <form id="contact-form" action="https://formspree.io/f/xaeyrzgw" method="POST">
+            <input type="text" name="_gotcha" style="display:none">
+
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" autocomplete="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Votre adresse email" autocomplete="email" required>
+
+            <label for="subject">Sujet</label>
+<input type="text" id="subject" name="subject" placeholder="Objet de votre demande" required>
+
+            <label for="message">Message</label>
+            <label for="subject">Sujet</label>
+<input type="text" id="subject" name="subject" placeholder="Objet de votre demande" required>
+            <textarea id="message" name="message" placeholder="Votre message" autocomplete="off" required></textarea>
+
+            <button type="submit">Envoyer le message</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>MARLONE COLLECTION</p>
+    <p>© 2026 — Tous droits réservés.</p>
+</footer>
+
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", () => {
+        const isOpen = navMenu.classList.toggle("active");
+        menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+    document.querySelectorAll("nav ul a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+    });
+});
+</script>
+
+</body>
+</html>
+
