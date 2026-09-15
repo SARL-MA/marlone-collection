@@ -328,7 +328,7 @@ form button:hover {
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.8)
         ),
-        url("images/hero/hero.jpg");
+        url("hero.jpg");
 
     background-size: cover;
     background-position: center;
